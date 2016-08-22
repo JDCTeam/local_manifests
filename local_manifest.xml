@@ -56,10 +56,10 @@
 	<!-- Packages -->
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<remove-project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" />
-	<project path="packages/apps/OTAUpdates" name="MatthewBooth/OTAUpdates" remote="github" revision="aosp" />
+	<!--<project path="packages/apps/OTAUpdates" name="MatthewBooth/OTAUpdates" remote="github" revision="aosp" />-->
 	<project path="packages/apps/Settings" name="JDCTeam/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0" />
 	<project path="packages/apps/SetupWizard" name="JDCTeam/android_packages_apps_SetupWizard" remote="github" revision="opt-cm-13.0" />
-	<project path="packages/apps/STweaks" name="JDCTeam/STweaks" remote="github" revision="aosp" />
+	<project path="packages/apps/STweaks" name="JDCTeam/STweaks" remote="github" revision="opt-cm-13.0" />
 
 	<!--Proprietary vendor blobs-->
 	<project path="vendor/samsung" name="JDCTeam/proprietary_vendor_samsung" remote="github" revision="jf-6.0-newril" />
