@@ -85,5 +85,10 @@
 	
 	<!--AROMA installer-->
 	<project path="aroma" name="dkati/Optimized-AromaInstaller" remote="github" revision="opt-cm-13.0" />
+	
+	<!--Snap camera-->
+	 <remove-project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" />
+	 <project path="packages/apps/Snap" name="JDCTeam/android_packages_apps_Snap" remote="github" revision="opt-cm-13.0" />
+	
 
 </manifest>
