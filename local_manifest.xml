@@ -86,6 +86,10 @@
 	<!--AROMA installer-->
 	<project path="aroma" name="dkati/Optimized-AromaInstaller" remote="github" revision="opt-cm-13.0" />
 	
+	<!--Telephony service-->
+	<remove-project path="packages/services/Telephony" name="CyanogenMod/android_packages_services_Telephony" />
+	<project path="frameworks/opt/telephony" name="JDCTeam/android_packages_services_Telephony" remote="github" revision="opt-cm-13.0" />
+	
 	<!--Camera app-->
 	<remove-project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" groups="pdk-fs" />
 	<project path="packages/apps/Camera2" name="AOSP-JF-MM/platform_packages_apps_Camera2" remote="github" revision="aosp-6.0" />
