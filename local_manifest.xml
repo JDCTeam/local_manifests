@@ -6,31 +6,33 @@
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
 	</project>
 	
-	<!-- Bluetooth(System) -->
+	<!-- *Bluetooth(System)* -->
 	<remove-project name="CyanogenMod/android_system_bt" path="system/bt" />
 	<project path="system/bt" name="JDCTeam/android_system_bt" remote="github" revision="opt-cm-13.0-stable" />
 	
-	<!-- Bluetooth(App) -->
+	<!-- *Bluetooth(App)* -->
 	<remove-project name="CyanogenMod/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" />
 	<project path="packages/apps/Bluetooth" name="JDCTeam/android_packages_apps_Bluetooth" remote="github" revision="opt-cm-13.0"/> 
 
-	<!-- Build -->
+	<!-- *Build* -->
 	<remove-project name="CyanogenMod/android_build" path="build" />
 	<project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-13.0" >
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 	
-	<!-- Core -->
+	<!-- *Core* -->
 	<remove-project name="CyanogenMod/android_system_core" path="system/core" />
 	<project path="system/core" name="JDCTeam/android_system_core" remote="github" revision="opt-cm-13.0" />
 
-	<!-- Device tree -->
-	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-13.0" />
-	<project path="device/samsung/jflte" name="JDCTeam/android_device_samsung_jflte" remote="github" revision="opt-cm-13.0" />
-	<project path="device/samsung/jf-common" name="JDCTeam/android_device_samsung_jf-common" remote="github" revision="opt-cm-13.0-haltests" />
-	<project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-13.0" />
-
-	<!-- Framework -->
+	<!--Device trees-->
+		<!-- *Custom Device tree* -->
+		<project path="device/samsung/jflte" name="JDCTeam/android_device_samsung_jflte" remote="github" revision="opt-cm-13.0" />
+		<project path="device/samsung/jf-common" name="JDCTeam/android_device_samsung_jf-common" remote="github" revision="opt-cm-13.0-haltests" />
+		<!--Common device trees-->
+		<project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-13.0" />
+		<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-13.0" />
+	
+	<!-- *Framework* -->
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
 	<project path="frameworks/base" name="JDCTeam/android_frameworks_base" remote="github" revision="opt-cm-13.0" />
 
@@ -47,13 +49,14 @@
 
 	<!-- Kernel (Alucard) -->
 	<project path="kernel/cr-arm-eabi-4.9.4" name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" remote="github" revision="master" />
-	<project path="kernel/samsung/alucard24" name="dkati/Alucard-Kernel-jfltexx" remote="github" revision="opt-cm-13.0" />
 	<project path="kernel/samsung/Ramdisk" name="JDCTeam/Ramdisk" remote="github" revision="opt-cm-13.0" />
+	<!--*Kernel Source from dkati repo*-Always synced with https://github.com/B--B/Alucard-Kernel-jfltexx/commits/aosp-6.0-->
+	<project path="kernel/samsung/alucard24" name="dkati/Alucard-Kernel-jfltexx" remote="github" revision="opt-cm-13.0" />
 
 	<!-- Kernel (base) -->
 	<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-13.0" />
 
-	<!-- Packages -->
+	<!-- *Packages* -->
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<remove-project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" />
 	<!--<project path="packages/apps/OTAUpdates" name="MatthewBooth/OTAUpdates" remote="github" revision="aosp" />-->
@@ -64,7 +67,7 @@
 	<!--Proprietary vendor blobs-->
 	<project path="vendor/samsung" name="JDCTeam/proprietary_vendor_samsung" remote="github" revision="jf-6.0-newril" />
 	
-	<!-- Telephony for unified variants -->
+	<!-- *Telephony for unified variants* -->
 	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
 	<remove-project name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" />
 	<project path="frameworks/opt/telephony" name="JDCTeam/android_frameworks_opt_telephony" remote="github" revision="opt-cm-13.0" />
@@ -74,11 +77,12 @@
 	<remove-project name="CyanogenMod/android_external_chromium-webview" path="external/chromium-webview" />
 	<project path="external/chromium-webview" name="AOSP-JF-MM/platform_external_chromium-webview" remote="github" revision="aosp-6.0-test" />
 	
-	<!--Vendor-->
+	<!--*Vendor*-->
 	<remove-project name="CyanogenMod/android_vendor_cm" path="vendor/cm" />
 	<remove-project name="CyanogenMod/cm_platform_sdk" path="vendor/cmsdk" />
 	<project path="vendor/cm" name="JDCTeam/android_vendor_cm" remote="github" revision="opt-cm-13.0" />
 	<project path="vendor/cmsdk" name="JDCTeam/cm_platform_sdk" remote="github" revision="opt-cm-13.0" />
+	
 	<project path="vendor/jdc" name="JDCTeam/android_vendor_jdc" remote="github" revision="opt-cm-13.0" >
 	  <copyfile src="build.sh" dest="build.sh" />
 	</project>
@@ -86,5 +90,6 @@
 	<!--AROMA installer-->
 	<project path="aroma" name="dkati/Optimized-AromaInstaller" remote="github" revision="opt-cm-13.0" />
 	
+	<!-- * requires upstream merge -->
 
 </manifest>
