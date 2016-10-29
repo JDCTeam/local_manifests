@@ -42,9 +42,6 @@
         <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-Linaro" />
 
 	<!--Hardware-->
-	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-13.0-caf-8960" />
-
-	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-6.0-caf-8960" />
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-13.0" />
 
 	<!-- Kernel (Alucard) -->
