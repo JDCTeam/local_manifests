@@ -2,13 +2,13 @@
 <manifest>
 
 	<!--Self update this manifest-->
-	<project path=".repo/local_manifests" name="JDCTeam/local_manifests" remote="github" revision="opt-cm-13.0-caf">
+	<project path=".repo/local_manifests" name="JDCTeam/local_manifests" remote="github" revision="opt-cm-13.0">
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
 	</project>
 	
 	<!-- *Bluetooth(System)* -->
 	<remove-project name="CyanogenMod/android_system_bt" path="system/bt" />
-	<project path="system/bt" name="JDCTeam/android_system_bt" remote="github" revision="opt-cm-13.0-stable" />
+	<project path="system/bt" name="JDCTeam/android_system_bt" remote="github" revision="opt-cm-13.0" />
 	
 	<!-- *Bluetooth(App)* -->
 	<remove-project name="CyanogenMod/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" />
