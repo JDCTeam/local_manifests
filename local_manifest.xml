@@ -65,7 +65,7 @@
 	
 	<!-- Telephony service* -->
 	<remove-project name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" />
-	<project path="packages/services/Telephony" name="JDCTeam/android_packages_service_Telephony" remote="github" revision="opt-cm-13.0" />
+	<project path="packages/services/Telephony" name="JDCTeam/android_packages_services_Telephony" remote="github" revision="opt-cm-13.0" />
 	
 	<!-- *Telephony for unified variants* -->
 	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
