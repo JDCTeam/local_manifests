@@ -63,6 +63,10 @@
 	<!--Proprietary vendor blobs-->
 	<project path="vendor/samsung" name="JDCTeam/proprietary_vendor_samsung" remote="github" revision="jf-6.0-newril" />
 	
+	<!-- Telephony service* -->
+	<remove-project name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" />
+	<project path="packages/services/Telephony" name="JDCTeam/android_packages_service_Telephony" />
+	
 	<!-- *Telephony for unified variants* -->
 	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
 	<remove-project name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" />
