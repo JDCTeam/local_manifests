@@ -42,6 +42,9 @@
         <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-Linaro" />
 
 	<!--Hardware-->
+	<remove-project name="CyanogenMod/android_hardware_qcom_camera" path="hardware/qcom/camera" />
+	<project path="hardware/qcom/camera" name="JDCTeam/android_hardware_qcom_camera" remote="github" revision="camera-jf" />
+	
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-13.0" />
 
 	<!-- Kernel (Alucard) -->
