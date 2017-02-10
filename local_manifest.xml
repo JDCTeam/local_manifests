@@ -43,7 +43,7 @@
 
 	<!--Hardware-->
 	<remove-project name="LineageOS/android_hardware_qcom_camera" path="hardware/qcom/camera" />
-	<project path="hardware/qcom/camera" name="JDCTeam/android_hardware_qcom_camera" remote="github" revision="camera-jf" />
+	<project path="hardware/qcom/camera" name="JDCTeam/android_hardware_qcom_camera" remote="github" revision="opt-cm-13.0" />
 	
 	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-13.0" />
 
