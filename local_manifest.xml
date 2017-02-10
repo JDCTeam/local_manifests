@@ -77,10 +77,6 @@
 	<project path="frameworks/opt/telephony" name="JDCTeam/android_frameworks_opt_telephony" remote="github" revision="opt-cm-13.0" />
 	<project path="packages/apps/CarrierConfig" name="JDCTeam/android_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0" />
 
-	<!--WebView-->
-	<remove-project name="LineageOS/android_external_chromium-webview" path="external/chromium-webview" />
-	<project path="external/chromium-webview" name="AOSP-JF-MM/platform_external_chromium-webview" remote="github" revision="aosp-6.0-test" />
-	
 	<!--*Vendor*-->
 	<remove-project name="LineageOS/android_vendor_cm" path="vendor/cm" />
 	<remove-project name="LineageOS/cm_platform_sdk" path="vendor/cmsdk" />
