@@ -1,4 +1,4 @@
-Local manifest for Optimized CyanogenMod 13
+Local manifest for Optimized LineageOS 13
 ==============
 
 To add this CAF-powered manifest to your local repository, use this command in source's root:
